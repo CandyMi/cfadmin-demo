@@ -10,7 +10,7 @@
 
 #### 2. config.lua
 
-  `Config`用来定义所有静态配置参数, 这些参数通常会在其它地方应用. 运行时请不要尝试修改它
+  `config.lua`用来定义所有静态配置参数, 这些参数通常会在其它地方应用. 运行时请不要尝试修改它
 
 ## 二、Controllers
 
@@ -59,6 +59,6 @@
   `Model`需要在Controllers注册之前完成初始化, 否则在Admin初始化的时候会抛出错误.
 
 
-## 五、LICENSE
+## 四、LICENSE
 
-  MIT License
+  [MIT License](https://github.com/CandyMi/cfadmin-demo/blob/master/LICENSE)
