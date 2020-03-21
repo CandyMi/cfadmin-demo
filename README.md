@@ -59,6 +59,10 @@
   `Model`需要在Controllers注册之前完成初始化, 否则在Admin初始化的时候会抛出错误.
 
 
-## 四、LICENSE
+## 四、使用方法
+
+  将此项目拷贝到`script`文件夹下, 使用`./cfadmin`运行即可开始使用.
+
+## 五、LICENSE
 
   [MIT License](https://github.com/CandyMi/cfadmin-demo/blob/master/LICENSE)
