@@ -59,10 +59,14 @@
   `Model`需要在Controllers注册之前完成初始化, 否则在`Admin`初始化的时候会抛出错误.
 
 
-## 四、使用方法
+## 四、Resources
+
+  `Resources`文件夹用于存放自定义或第三方的公共库函数、方法.
+
+## 五、使用方法
 
   将此项目拷贝到`script`文件夹下, 使用`./cfadmin`运行即可开始使用.
 
-## 五、LICENSE
+## 六、LICENSE
 
   [MIT License](https://github.com/CandyMi/cfadmin-demo/blob/master/LICENSE)
