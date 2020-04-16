@@ -2,6 +2,8 @@ local DB = require "DB"
 
 local config = require "config"
 
+local assert = assert
+
 local Model = { __Version__ = 0.1 }
 
 function Model.init()
@@ -21,12 +23,24 @@ function Model.init()
 
 end
 
+function Model.init_prepares(opt)
+  if Model.prepares then
+    return Model.prepares
+  end
+  Model.prepares = assert(Model._db_, "Model needs to initialize DB first"):prepares(opt)
+  return Model.prepares
+end
+
+function Model.execute(rkey, ...)
+  return assert(Model._db_, "Model needs to initialize DB first"):execute(rkey, ...)
+end
+
 function Model.query( ... )
-  return Model._db_:query( ... )
+  return assert(Model._db_, "Model needs to initialize DB first"):query( ... )
 end
 
 function Model.self()
-  return Model._db_
+  return assert(Model._db_, "Model needs to initialize DB first")
 end
 
 return Model

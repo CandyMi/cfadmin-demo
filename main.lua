@@ -31,6 +31,6 @@ app:static("static", 30)
 
 -- 监听端口与监听unix domain socket
 app:listen("0.0.0.0", 8000)
--- app:listen_ex("/var/run/cfadmin.sock", true)
+-- app:listenx("/var/run/cfadmin.sock", true)
 
 app:run()
