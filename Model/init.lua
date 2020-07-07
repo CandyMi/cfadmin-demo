@@ -16,7 +16,7 @@ function Model.init()
     password = config.DB_PASSWORD,
     charset = config.DB_CHARSET,
     database = config.DB_DATABASE,
-    max = config.MAX_POOL,
+    max = config.DB_POOL,
   }
 
   return Model._db_:connect()
