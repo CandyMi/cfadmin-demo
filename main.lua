@@ -5,6 +5,10 @@ local model = require "Model"
 -- 初始化数据库
 model.init()
 
+local Cached = require "Cached"
+-- 初始化缓存库
+Cached.init()
+
 local controllers = require "Controllers"
 
 -- 注册Api文件夹下的路由
