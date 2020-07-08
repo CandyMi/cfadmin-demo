@@ -13,7 +13,7 @@ local CONTROLLER = "Controllers/"
 
 -- 检查是否为lua文件
 local function is_lua_file(filename)
-  return string.find(filename, ".+%.lua")
+  return string.find(filename, ".+%.lua$")
 end
 
 -- 移除后缀名
